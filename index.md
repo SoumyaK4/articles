@@ -6,13 +6,13 @@ layout: home
 <div class="post-list">
 {% for post in site.posts %}
   <article class="post">
-    <h2 class="post-title"><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
+    <h2 class="post-title"><a href="{{ post.url| prepend: site.baseurl  }}">{{ post.title }}</a></h2>
     <p class="post-date">{{ post.date | date: "%B %-d, %Y" }}</p>
     {% if post.img %}
       <img src="{{ post.img }}" style="max-height: 200px;">
     {% endif %}
     <br>
-    <p class="post-description">{{ post.description }}</p>
+    <p class="post-description">{{ post.body }}</p>
     {% if post.external_url and post.external_url != "" %}
       <a href="{{ post.external_url }}" target="_blank">More Information</a>
     {% else %}
