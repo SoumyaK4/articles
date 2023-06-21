@@ -17,4 +17,4 @@ baseurl: "/articles"
 #       path: "" # an empty string here means all files in the project
 #     values:
 
-permalink: "/:year/:month/:day/:title.html"
+permalink: "/:year/:month/:day/:title/"
