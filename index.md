@@ -6,7 +6,7 @@ layout: home
 <div class="post-list">
 {% for post in site.posts %}
   <article class="post">
-    <h2 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+    <h2 class="post-title"><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
     <p class="post-date">{{ post.date | date: "%B %-d, %Y" }}</p>
     {% if post.img %}
       <img src="{{ post.img }}" style="max-height: 200px;">
