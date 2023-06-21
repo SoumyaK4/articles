@@ -4,14 +4,16 @@ theme: just-the-docs
 
 url: https://just-the-docs.github.io
 
-defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-      type: "posts"
-    values:
-      layout: "post"
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-    values:
+# defaults:
+#   -
+#     scope:
+#       path: "" # an empty string here means all files in the project
+#       type: "posts"
+#     values:
+#       layout: "post"
+#   -
+#     scope:
+#       path: "" # an empty string here means all files in the project
+#     values:
+
+permalink: "/:year/:month/:day/:title.html"
