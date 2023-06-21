@@ -8,14 +8,12 @@ title: Blog Posts
 <div class="post-list">
   {% for post in site.posts %}
     <div class="post">
-      <div class="post-header">
+      <div class="post-face">
+        <h2 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+        <p class="post-date">{{ post.date | date: "%B %-d, %Y" }}</p>
         {% if post.img %}
           <img src="{{ post.img }}" alt="{{ post.title }}" class="post-image">
         {% endif %}
-        <div class="post-info">
-          <h2 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-          <p class="post-date">{{ post.date | date: "%B %-d, %Y" }}</p>
-        </div>
       </div>
       <p class="post-description">{{ post.description }}</p>
     </div>
@@ -32,7 +30,7 @@ title: Blog Posts
     margin-bottom: 40px;
   }
 
-  .post-header {
+  .post-face {
     display: flex;
     align-items: center;
   }
@@ -42,10 +40,6 @@ title: Blog Posts
     max-width: 200px;
     height: auto;
     margin-right: 10px;
-  }
-
-  .post-info {
-    flex: 1;
   }
 
   .post-title {
