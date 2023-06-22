@@ -13,8 +13,6 @@ layout: default
         <img src="{{ post.img }}" alt="{{ post.title }}" class="post-image">
       {% endif %}
       <p class="post-description">{{ post.description }}</p>
-    </div>
-    <div class="eurl">
     {% if post.external_url and post.external_url != "" %}
      <a href="{{ post.external_url }}" target="_blank">More Information</a>
     {% else %}
