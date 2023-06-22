@@ -1,20 +1,19 @@
-title: Just the Docs Template
+title: Articles
 description: A starter template for a Jeykll site using the Just the Docs theme!
 theme: just-the-docs
 
 url: https://soumyak4.github.io/
 baseurl: "/articles"
+# Specify the folders to include
+include:
+  - _posts
+  - assets
 
-# defaults:
-#   -
-#     scope:
-#       path: "" # an empty string here means all files in the project
-#       type: "posts"
-#     values:
-#       layout: "post"
-#   -
-#     scope:
-#       path: "" # an empty string here means all files in the project
-#     values:
+# Enable the caching of assets
+assets:
+  cache: true
+
+# Configure the markdown renderer
+markdown: kramdown
 
 permalink: "/:year/:month/:day/:title/"
