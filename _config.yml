@@ -2,7 +2,7 @@ title: Articles
 description: A starter template for a Jeykll site using the Just the Docs theme!
 theme: just-the-docs
 
-url: ""
+url: "https://soumyak4.github.io/articles/"
 baseurl: "/articles"
 # Specify the folders to include
 include:
@@ -17,3 +17,11 @@ assets:
 markdown: kramdown
 
 permalink: "/:year/:month/:day/:title/"
+
+# permalink: pretty
+
+#nav_links:
+#  - title: Home
+#    url: "/"
+#  - title: About
+#    url: "/about/"
