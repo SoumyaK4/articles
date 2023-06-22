@@ -15,10 +15,11 @@ layout: default
       <p class="post-description">{{ post.description }}</p>
     </div>
     <div class="eurl">
-      {% if post.external_url and post.external_url != "" %}
+    {% if post.external_url and post.external_url != "" %}
      <a href="{{ post.external_url }}" target="_blank">More Information</a>
     {% else %}
      <a href="{{ post.url }}" target="_blank">Read Post</a>
+    {% endif %}
     </div>
   </div>
 {% endfor %}
