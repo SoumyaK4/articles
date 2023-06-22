@@ -14,10 +14,12 @@ layout: default
       {% endif %}
       <p class="post-description">{{ post.description }}</p>
     </div>
-    {% if post.external_url and post.external_url != "" %}
-                                    <a href="{{ post.external_url }}" target="_blank">More Information</a>
-                                    {% else %}
-                                    <a href="{{ post.url }}" target="_blank">Read Post</a>
+    <div class="eurl">
+      {% if post.external_url and post.external_url != "" %}
+     <a href="{{ post.external_url }}" target="_blank">More Information</a>
+    {% else %}
+     <a href="{{ post.url }}" target="_blank">Read Post</a>
+    </div>
   </div>
 {% endfor %}
 </div>
