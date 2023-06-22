@@ -1,10 +1,7 @@
 ---
+title: Home
 layout: default
-title: Blog Posts
 ---
-
-
-# Blog Posts
 
 <div class="post-list">
 {% for post in site.posts %}
