@@ -8,4 +8,4 @@ external_url: https://soumyak4.github.io/articles/
 ---
 Honolulu
 
-![Alt Text]({{ "/assets/img/goban.jpg" | relative_url }})
+
