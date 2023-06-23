@@ -3,7 +3,7 @@ backend:
   branch: main # Branch to update (optional; defaults to master)
   repo: SoumyaK4/articles
 media_folder: "articles/assets/img"
-public_folder: "/assets/img"
+public_folder: "/articles/assets/img"
 collections:
   - name: "post" # Used in routes, e.g., /admin/collections/blog
     label: "Post" # Used in the UI
