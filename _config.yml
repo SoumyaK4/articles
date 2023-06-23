@@ -25,3 +25,11 @@ permalink: "/:year/:month/:day/:title/"
 #    url: "/"
 #  - title: About
 #    url: "/about/"
+
+defaults:
+  -
+    scope:
+      path: "" # empty string matches all files
+    values:
+      img: "/assets/img/default.jpg"
+      
