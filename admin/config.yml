@@ -2,7 +2,7 @@ backend:
   name: github
   branch: main # Branch to update (optional; defaults to master)
   repo: SoumyaK4/articles
-media_folder: "assets/img"
+media_folder: "articles/assets/img"
 public_folder: "/assets/img"
 collections:
   - name: "post" # Used in routes, e.g., /admin/collections/blog
