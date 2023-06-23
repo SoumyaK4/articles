@@ -26,10 +26,10 @@ permalink: "/:year/:month/:day/:title/"
 #  - title: About
 #    url: "/about/"
 
-#defaults:
-#  -
-#    scope:
-#      path: "" # empty string matches all files
-#    values:
-#      img: "/assets/img/default.jpg"
+defaults:
+  -
+    scope:
+      path: "_posts" # empty string matches all files
+    values:
+      img: "/assets/img/default.jpg"
       
