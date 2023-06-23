@@ -5,7 +5,7 @@ layout: default
   <article>
     <h2><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
     <p>{{ post.date | date: "%B %-d, %Y" }}</p>
-    <p>{{ post.img }}</p>
+    <p>{{ post.img | prepend: site.baseurl }}</p>
     <p>{{ post.description }}</p>
     <p>{{ post.body }}</p>
     <div>{{ content }}</div>
